@@ -1,0 +1,128 @@
+/* Style global */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Style pour le titre h1 */
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+/* Style pour le marquee */
+marquee {
+    width: 100%;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+/* Style pour l'image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le fieldset */
+fieldset {
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Style pour la légende */
+legend {
+    color: #2980b9;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style pour les labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Style pour les inputs et select */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.3);
+    outline: none;
+}
+
+/* Style pour les boutons */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #1abc9c;
+}
+
+/* Style pour le prix */
+#prix {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Style pour les messages d'alerte */
+#alert {
+    color: #f53e2a;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}

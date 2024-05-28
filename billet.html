@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation billet</title>
+    <link rel="stylesheet" href="billet.css" type="text/css" />
+    <script language="javascript" type="text/jscript" src="billet.js">
+    </script>
+</head>
+
+<body>
+    <marquee><center><h1 id="titre">Bienvenu sur notre Site</h1></center></marquee> 
+   <center><img src="img.jpeg" alt="avion" width="40%" /></center>
+    <fieldset>
+        <legend>Réservation billet</legend>
+        <form action="#" method="#">
+        <label for="nom">Nom *</label>
+        <input id="nom" type="text" placeholder="Entrez votre nom SVP" required>
+        <label for="prenom">Prenom *</label>
+        <input id="prenom" type="text" placeholder="Entrez votre prenom SVP" required>
+        <label for="mail">E-mail *</label>
+        <input id="mail" type="email" placeholder="contact@gmail.com" pattern=".+@gmail.com" title="Saisir une adresse Gmail" required><br>
+        <label class="A1">Pays de départ:</label>
+        <select name="depart">
+            <optgroup label="Magreb">
+                <option>Tunis</option>
+                <option>Maroc</option>
+            </optgroup>
+        </select>
+        <label class="A1">Pays de destination :</label>
+
+        <select name="arrive">
+            <optgroup label="Europe">
+                <option>France</option>
+                <option>Italie</option>
+            </optgroup>
+        </select>
+        <br /><br />
+        <label class="A1"> Date de départ: </label>
+        <input type="date" name="date" id="date" />
+
+        <br/>
+
+        <label class="A2">Adulte :</label>
+<input type="number" min="0" max="100" name="NA" id="NA"/>
+	
+<label class="A2">Enfants(-12ans) :</label>
+<input type="number" min="0" max="100" name="NE" id="NE"/>
+<label class="A2">Bébés (-2ans) :</label>
+<input type="number" min="0" max="100" name="NB" id="NB"/>
+
+<br>
+<!--JavaScript-->
+<input type="button" value="Calculer" onclick="calcul()"/>
+<input type="text" name="prix" size="5" id="prix"/><label id="prix">DT</label>
+<br />
+<hr/>
+<div id="alert"></div>
+
+<br />
+<input type="submit" value="Envoyer" />
+<input type="reset" value="Anuler" />
+</form>
+    </fieldset>
+</body>
+
+</html>
